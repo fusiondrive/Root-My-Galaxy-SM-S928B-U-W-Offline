@@ -121,7 +121,7 @@ Build the debug APK:
 A prebuilt debug APK from this tree is:
 
 ```text
-dist/RootMyGalaxy-S928-DZF2-offline-v0.3.3.apk
+dist/RootMyGalaxy-S928-DZF2-offline-v0.3.4.apk
 ```
 
 Rebuild one public payload:

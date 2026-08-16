@@ -61,6 +61,18 @@ The APK assets no longer match `app/src/main/assets/targets-v3.json`.
 Do not replace a payload or `ksud` from another model just because the file
 size looks similar.
 
+## `late-load: bind mount: No such file or directory` (`rc=11`)
+
+Bootstrap root succeeded, but the helper bind-mounts
+`/data/local/tmp/ksud-s25u-kdp` onto `/system/bin/logcat`. If Shizuku only
+staged `ksud-selected`, that source path is missing.
+
+v0.3.4 stages both names. Reinstall that APK, or copy the file once:
+
+```sh
+adb shell cp /data/local/tmp/ksud-selected /data/local/tmp/ksud-s25u-kdp
+```
+
 ## KernelSU loads then watchdog / reboot
 
 Confirm the selected profile matches the phone. The U/U1 `ksud` live-patches

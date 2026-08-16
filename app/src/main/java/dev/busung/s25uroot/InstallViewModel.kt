@@ -323,7 +323,9 @@ class InstallViewModel(application: Application) : AndroidViewModel(application)
 
     private fun installKernelSu(payloads: VerifiedPayloads) {
         if (shizukuEnabled()) {
-            // v0.2.26+: helper 硬编码 ksud 路径 /data/local/tmp/ksud-selected（F7310 版 helper）
+            // Public helper bind-mounts KSU_LOADER_PATH=/data/local/tmp/ksud-s25u-kdp
+            // onto /system/bin/logcat. Also keep ksud-selected for older helpers.
+            shizukuStage(payloads.kernelSu, SHIZUKU_KSUD_PATH, "755")
             shizukuStage(payloads.kernelSu, "/data/local/tmp/ksud-selected", "755")
             shizukuStage(payloads.kernelSu, SHIZUKU_KSUD_STAGE_PATH, "755")
             appendLog(app.getString(R.string.log_ksu_staged))

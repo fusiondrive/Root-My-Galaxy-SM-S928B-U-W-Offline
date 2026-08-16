@@ -24,7 +24,7 @@ Package identity:
 
 ```text
 applicationId: io.github.fusiondrive.RMGs928offline
-versionName: 0.3.3-s928-dzf2-offline
+versionName: 0.3.4-s928-dzf2-offline
 ```
 
 This is distinct from official Root My Galaxy (`dev.busung.s25uroot`) and
@@ -54,6 +54,7 @@ The script reads the connected device model and stages the matching pair:
 /data/local/tmp/rmg-s928/<profile>/cve-2026-43499-app.so
 /data/local/tmp/rmg-s928/<profile>/ksud
 /data/local/tmp/libcve43499root
+/data/local/tmp/ksud-s25u-kdp
 /data/local/tmp/ksud-selected
 ```
 

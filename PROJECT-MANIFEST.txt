@@ -1,11 +1,11 @@
 Root My Galaxy SM-S928B/U/W Offline
 
 applicationId: io.github.fusiondrive.RMGs928offline
-versionName: 0.3.3-s928-dzf2-offline
-versionCode: 43
-debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.3.apk
-  size 71202388
-  sha256 a12621863038f0f45b519edfbedd3041f704e0db2e6bc5d0dc37af658408bfc2
+versionName: 0.3.4-s928-dzf2-offline
+versionCode: 44
+debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.4.apk
+  size 71202404
+  sha256 ebf66cb211007cc11912254fb55bf580f31e0e9aa7ea36cdbc6987bdb544d86e
 
 Targets
   e3q-S928USQS6DZF2

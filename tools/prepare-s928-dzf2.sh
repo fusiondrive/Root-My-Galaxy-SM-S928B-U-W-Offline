@@ -226,8 +226,9 @@ if [ "$DO_STAGE_ADB" -eq 1 ]; then
   adb push "$SELECTED_PAYLOAD" "${STAGE}/cve-2026-43499-app.so"
   adb push "$SELECTED_KSUD" "${STAGE}/ksud"
   adb push "$HELPER" /data/local/tmp/libcve43499root
+  adb push "$SELECTED_KSUD" /data/local/tmp/ksud-s25u-kdp
   adb push "$SELECTED_KSUD" /data/local/tmp/ksud-selected
-  adb shell "chmod 755 /data/local/tmp/libcve43499root /data/local/tmp/ksud-selected '${STAGE}/ksud'"
+  adb shell "chmod 755 /data/local/tmp/libcve43499root /data/local/tmp/ksud-s25u-kdp /data/local/tmp/ksud-selected '${STAGE}/ksud'"
 fi
 
 if [ "$DO_PRINT_COMMAND" -eq 1 ]; then
