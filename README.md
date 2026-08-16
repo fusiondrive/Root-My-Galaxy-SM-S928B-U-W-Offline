@@ -160,12 +160,5 @@ Thanks to [mvfsullivan](https://github.com/mvfsullivan) for the Canadian
 `SM-S928W` bucket / `ksud` findings and hardware evidence:
 [BuSung-dev/Root-My-Galaxy-Payloads#216](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/216).
 
-The offline repository layout follows
-[soumarcelino/Root-My-Galaxy-SM-S918B](https://github.com/soumarcelino/Root-My-Galaxy-SM-S918B).
-The app baseline is
-[youyoudezhuzhu/rmg-f731u](https://github.com/youyoudezhuzhu/rmg-f731u).
-The public payload tree is
-[BuSung-dev/Root-My-Galaxy-Payloads](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads).
-
 This repository is an offline S24 Ultra DZF2 pack. It is not the official
 multi-device Root My Galaxy feed.
