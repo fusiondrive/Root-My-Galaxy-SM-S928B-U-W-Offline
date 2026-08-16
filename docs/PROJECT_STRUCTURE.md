@@ -16,6 +16,9 @@ src/
 src/targets/e3q-S928USQS6DZF2/
   Headers for SM-S928U / SM-S928U1 DZF2.
 
+src/targets/e3q-S928W-S928USQS6DZF2/
+  Headers for SM-S928W DZF2. Bucket 28 / one bank slot only.
+
 src/targets/e3q-S928BXXS6DZF2/
   Headers for SM-S928B DZF2.
 
@@ -49,6 +52,7 @@ app/src/main/java/dev/busung/s25uroot/PayloadRepository.kt
   Extracts and checksums the matching bundled payload.
 
 src/targets/e3q-S928USQS6DZF2/target.h
+src/targets/e3q-S928W-S928USQS6DZF2/target.h
 src/targets/e3q-S928BXXS6DZF2/target.h
   Firmware-specific constants. Do not mix them.
 ```

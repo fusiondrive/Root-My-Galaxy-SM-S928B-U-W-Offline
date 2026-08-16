@@ -11,8 +11,8 @@ android {
         applicationId = "io.github.rootmygalaxy.s24ultra"
         minSdk = 33
         targetSdk = 36
-        versionCode = 40
-        versionName = "0.3.0-s928-dzf2-offline"
+        versionCode = 41
+        versionName = "0.3.1-s928-dzf2-offline"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         ndk {

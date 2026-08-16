@@ -24,7 +24,7 @@ Package identity:
 
 ```text
 applicationId: io.github.rootmygalaxy.s24ultra
-versionName: 0.3.0-s928-dzf2-offline
+versionName: 0.3.1-s928-dzf2-offline
 ```
 
 This is distinct from stock Root My Galaxy (`dev.busung.s25uroot`) and from

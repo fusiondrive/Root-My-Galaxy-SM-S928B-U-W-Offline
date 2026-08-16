@@ -16,6 +16,17 @@ class TargetProfileTest {
         buildTokens = setOf("S928U1UES6DZF2", "S928USQS6DZF2"),
     )
 
+    private val s928w = TargetProfile(
+        profileId = "e3q-S928W-S928USQS6DZF2",
+        displayName = "Galaxy S24 Ultra SM-S928W | S928WVLS6DZF2",
+        models = setOf("SM-S928W"),
+        kernelVersions = setOf("6.1.145"),
+        exploit = RemoteArtifact("asset://e3q-S928W-S928USQS6DZF2/cve-2026-43499-app.so", 104128),
+        kernelSu = RemoteArtifact("asset://e3q-S928BXXS6DZF2/ksud-e3q-S928BXXS6DZF2-kdp", 4748232),
+        kernelReleases = setOf("6.1.145-android14-11-33419968-abS928USQS6DZF2"),
+        buildTokens = setOf("S928WVLS6DZF2"),
+    )
+
     private val s928b = TargetProfile(
         profileId = "e3q-S928BXXS6DZF2",
         displayName = "Galaxy S24 Ultra SM-S928B | S928BXXS6DZF2",
@@ -66,6 +77,20 @@ class TargetProfileTest {
     }
 
     @Test
+    fun matchesExactS928WDzf2() {
+        assertTrue(
+            s928w.matches(
+                snapshot(
+                    model = "SM-S928W",
+                    kernelRelease = "6.1.145-android14-11-33419968-abS928USQS6DZF2",
+                    buildId = "BP4A.251205.006.S928WVLS6DZF2",
+                    fingerprint = "samsung/e3qcsx/e3q:16/BP4A.251205.006/S928WVLS6DZF2:user/release-keys",
+                ),
+            ),
+        )
+    }
+
+    @Test
     fun rejectsSiblingModelsAndWrongBuilds() {
         val s928bOnUKernel = snapshot(
             model = "SM-S928B",
@@ -73,11 +98,17 @@ class TargetProfileTest {
             buildId = "BP4A.251205.006.S928BXXS6DZF2",
             fingerprint = "samsung/e3qxxx/e3q:16/BP4A.251205.006/S928BXXS6DZF2:user/release-keys",
         )
-        val s928w = snapshot(
+        val s928wOnUBuild = snapshot(
             model = "SM-S928W",
             kernelRelease = "6.1.145-android14-11-33419968-abS928USQS6DZF2",
             buildId = "BP4A.251205.006.S928USQS6DZF2",
             fingerprint = "samsung/e3qxxx/e3q:16/BP4A.251205.006/S928USQS6DZF2:user/release-keys",
+        )
+        val s928wExact = snapshot(
+            model = "SM-S928W",
+            kernelRelease = "6.1.145-android14-11-33419968-abS928USQS6DZF2",
+            buildId = "BP4A.251205.006.S928WVLS6DZF2",
+            fingerprint = "samsung/e3qcsx/e3q:16/BP4A.251205.006/S928WVLS6DZF2:user/release-keys",
         )
         val s928bWrongBuild = snapshot(
             model = "SM-S928B",
@@ -88,8 +119,12 @@ class TargetProfileTest {
 
         assertFalse(s928u.matches(s928bOnUKernel))
         assertFalse(s928b.matches(s928bOnUKernel))
-        assertFalse(s928u.matches(s928w))
-        assertFalse(s928b.matches(s928w))
+        assertFalse(s928u.matches(s928wOnUBuild))
+        assertFalse(s928b.matches(s928wOnUBuild))
+        assertFalse(s928w.matches(s928wOnUBuild))
+        assertFalse(s928u.matches(s928wExact))
+        assertFalse(s928b.matches(s928wExact))
+        assertTrue(s928w.matches(s928wExact))
         assertFalse(s928b.matches(s928bWrongBuild))
     }
 

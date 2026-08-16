@@ -2,7 +2,7 @@
 
 ## Support check failed
 
-The phone is not one of the two exact DZF2 profiles.
+The phone is not one of the three exact DZF2 profiles.
 
 ```sh
 adb shell 'getprop ro.product.model; getprop ro.build.display.id; getprop ro.build.fingerprint; uname -r'
@@ -15,12 +15,16 @@ SM-S928U or SM-S928U1
 ...S928U1UES6DZF2 or ...S928USQS6DZF2
 6.1.145-android14-11-33419968-abS928USQS6DZF2
 
+SM-S928W
+...S928WVLS6DZF2
+6.1.145-android14-11-33419968-abS928USQS6DZF2
+
 SM-S928B
 ...S928BXXS6DZF2
 6.1.145-android14-11-33419968-abS928BXXS6DZF2
 ```
 
-`SM-S928W`, `SM-S928N`, `SM-S9280`, CZC1, and ZDP are not in this pack.
+`SM-S928N`, `SM-S9280`, CZC1, and ZDP are not in this pack.
 
 ## uid is 10xxx and context is untrusted_app
 
@@ -59,9 +63,9 @@ size looks similar.
 
 ## KernelSU loads then watchdog / reboot
 
-Confirm the selected profile matches `uname -r` exactly. The U/U1 and B
-modules have different vermagic strings. Mixing them will not produce a
-stable late-load.
+Confirm the selected profile matches the phone. The U/U1 `ksud` live-patches
+text and panics on `SM-S928W`. W must use the S928B no-patch-text `ksud`.
+The U/U1 and B modules also have different vermagic strings.
 
 ## Hash mismatch on a rebuilt payload
 

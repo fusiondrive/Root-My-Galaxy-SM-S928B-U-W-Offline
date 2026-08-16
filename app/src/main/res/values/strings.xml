@@ -69,7 +69,7 @@
     <string name="about">About</string>
     <string name="about_title">About Root My Galaxy</string>
     <string name="about_description">About Root My Galaxy</string>
-    <string name="about_body">Offline Root My Galaxy pack for Galaxy S24 Ultra SM-S928U / SM-S928U1 / SM-S928B on exact DZF2 firmware. Payloads are bundled in the APK.</string>
+    <string name="about_body">Offline Root My Galaxy pack for Galaxy S24 Ultra SM-S928U / SM-S928U1 / SM-S928W / SM-S928B on exact DZF2 firmware. Payloads are bundled in the APK.</string>
 
     <string name="install_title">Install</string>
     <string name="install_keep_open">Keep this screen open until installation finishes</string>

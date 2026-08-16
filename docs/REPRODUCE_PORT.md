@@ -13,6 +13,7 @@ target header changes. The two firmware builds must be compiled separately.
 
 ```sh
 make TARGET=e3q-S928USQS6DZF2 stable
+make TARGET=e3q-S928W-S928USQS6DZF2 stable
 make TARGET=e3q-S928BXXS6DZF2 stable
 ```
 
@@ -26,6 +27,10 @@ expected value in `PROJECT-MANIFEST.txt`.
 e3q-S928USQS6DZF2/cve-2026-43499-app.so
 size 104128
 SHA-256 b2931d8980f969b5a0cb05bd67f6804f445ad4a4c867a7b4c4081c2ffac5b36a
+
+e3q-S928W-S928USQS6DZF2/cve-2026-43499-app.so
+size 104128
+SHA-256 82531cb637067d8e849f1c9d259933dcc3bed3519c1603841333cc8bcbd789e0
 
 e3q-S928BXXS6DZF2/cve-2026-43499-app.so
 size 104128
@@ -43,8 +48,8 @@ helper, then copies them into `app/src/main/assets/<profileId>/`.
 
 ## What Must Not Be Reused
 
-- Do not compile S928B with `TARGET=e3q-S928USQS6DZF2`.
-- Do not copy `SLIDE_NFULNL_LOGGER_OFF` between the two headers.
-- Do not embed the U/U1 `ksud` in the B asset directory, or the reverse.
-- Do not treat BTF identity as proof that vermagic or logger-string offsets
-  are identical.
+- Do not compile S928B or S928W with `TARGET=e3q-S928USQS6DZF2`.
+- Do not copy `SLIDE_NFULNL_LOGGER_OFF`, `SLIDE_BANK_SLOTS`, or
+  `SLIDE_S928_BANK_LOCK_MAX_BUCKET` between headers.
+- Do not embed the U/U1 `ksud` in the W or B asset directory.
+- Do not treat a shared US kernel banner as proof that W can use the U payload.

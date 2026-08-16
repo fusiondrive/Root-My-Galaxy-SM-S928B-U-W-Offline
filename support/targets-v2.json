@@ -28,6 +28,32 @@
       }
     },
     {
+      "profileId": "e3q-S928W-S928USQS6DZF2",
+      "manufacturer": "samsung",
+      "model": "SM-S928W",
+      "device": "e3q",
+      "kernelRelease": "6.1.145-android14-11-33419968-abS928USQS6DZF2",
+      "kernelVersion": "Linux version 6.1.145-android14-11-33419968-abS928USQS6DZF2 (build-user@build-host) (Android (10087095, +pgo, +bolt, +lto, -mlgo, based on r487747c) clang version 17.0.2 (https://android.googlesource.com/toolchain/llvm-project d9f89f4d16663d5012e5c09495f3b30ece3d2362), LLD 17.0.2) #1 Tue Jun  9 12:38:51 UTC 2026",
+      "kernelBuildVersion": "#1 Tue Jun  9 12:38:51 UTC 2026",
+      "buildDisplay": "BP4A.251205.006.S928WVLS6DZF2",
+      "buildFingerprint": "samsung/e3qcsx/e3q:16/BP4A.251205.006/S928WVLS6DZF2:user/release-keys",
+      "sdk": 36,
+      "abi": "arm64-v8a",
+      "pageSize": 4096,
+      "exploit": {
+        "url": "asset://e3q-S928W-S928USQS6DZF2/cve-2026-43499-app.so",
+        "size": 104128,
+        "sha256": "82531cb637067d8e849f1c9d259933dcc3bed3519c1603841333cc8bcbd789e0"
+      },
+      "kernelsu": {
+        "url": "asset://e3q-S928BXXS6DZF2/ksud-e3q-S928BXXS6DZF2-kdp",
+        "size": 4748232,
+        "sha256": "43f451313dc111429187f8f93e76c57c42976323782aac936c1c09aa309b76b3",
+        "kmi": "android14-6.1",
+        "managerPackage": "me.weishu.kernelsu"
+      }
+    },
+    {
       "profileId": "e3q-S928BXXS6DZF2",
       "manufacturer": "samsung",
       "model": "SM-S928B",

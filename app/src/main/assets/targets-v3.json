@@ -20,6 +20,24 @@
       }
     },
     {
+      "payloadId": "e3q-S928W-S928USQS6DZF2",
+      "displayName": "Galaxy S24 Ultra SM-S928W | S928WVLS6DZF2",
+      "models": ["SM-S928W"],
+      "kernelVersions": ["6.1.145"],
+      "kernelReleases": ["6.1.145-android14-11-33419968-abS928USQS6DZF2"],
+      "buildTokens": ["S928WVLS6DZF2"],
+      "exploit": {
+        "url": "asset://e3q-S928W-S928USQS6DZF2/cve-2026-43499-app.so",
+        "size": 104128,
+        "sha256": "82531cb637067d8e849f1c9d259933dcc3bed3519c1603841333cc8bcbd789e0"
+      },
+      "kernelsu": {
+        "url": "asset://e3q-S928BXXS6DZF2/ksud-e3q-S928BXXS6DZF2-kdp",
+        "size": 4748232,
+        "sha256": "43f451313dc111429187f8f93e76c57c42976323782aac936c1c09aa309b76b3"
+      }
+    },
+    {
       "payloadId": "e3q-S928BXXS6DZF2",
       "displayName": "Galaxy S24 Ultra SM-S928B | S928BXXS6DZF2",
       "models": ["SM-S928B"],

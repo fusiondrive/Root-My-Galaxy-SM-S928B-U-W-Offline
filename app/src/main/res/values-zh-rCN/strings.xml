@@ -29,7 +29,7 @@
     <string name="about">关于</string>
     <string name="about_title">关于 Root My Galaxy</string>
     <string name="about_description">关于 Root My Galaxy</string>
-    <string name="about_body">Galaxy S24 Ultra SM-S928U / SM-S928U1 / SM-S928B 精确 DZF2 固件的离线 Root My Galaxy 包。Payload 已内嵌在 APK 中。</string>
+    <string name="about_body">Galaxy S24 Ultra SM-S928U / SM-S928U1 / SM-S928W / SM-S928B 精确 DZF2 固件的离线 Root My Galaxy 包。Payload 已内嵌在 APK 中。</string>
     <string name="history_payload">Payload: %1$s</string>
     <string name="export_log">导出日志</string>
     <string name="export_log_saved">日志已保存</string>

@@ -17,7 +17,6 @@ The standalone `.ko` files are retained for auditing. The app late-loads the
 matching `ksud-*` binary because `ksud late-load` embeds the target
 `<kmi>_kernelsu.ko` asset.
 
-Do not reuse the U/U1 pair on `SM-S928B`, and do not reuse the B pair on
-`SM-S928U` / `SM-S928U1`. The two kernels share BTF and most symbol offsets,
-but they have different vermagic strings and a different
-`SLIDE_NFULNL_LOGGER_OFF`.
+Do not reuse the U/U1 pair on `SM-S928B` or `SM-S928W`. W was recorded to
+panic when the U/U1 `ksud` live-patched text; it uses the S928B no-patch-text
+`ksud` instead. The U/U1 and B modules also have different vermagic strings.

@@ -1,6 +1,6 @@
 # Target Profile
 
-This pack supports two exact DZF2 builds of Galaxy S24 Ultra, codename `e3q`.
+This pack supports three exact DZF2 builds of Galaxy S24 Ultra, codename `e3q`.
 Values must not be copied onto another firmware.
 
 ## SM-S928U / SM-S928U1
@@ -22,6 +22,27 @@ page size: 4096
 
 The outer package uses `SM-S928U1` / `S928U1UES6DZF2`. The kernel banner uses
 `S928USQS6DZF2`. Both forms are accepted.
+
+## SM-S928W
+
+```text
+model: SM-S928W
+device: e3q
+product: e3qcsx
+package firmware: S928WVLS6DZF2
+internal kernel build: S928USQS6DZF2
+build display: BP4A.251205.006.S928WVLS6DZF2
+fingerprint: samsung/e3qcsx/e3q:16/BP4A.251205.006/S928WVLS6DZF2:user/release-keys
+kernel release: 6.1.145-android14-11-33419968-abS928USQS6DZF2
+kernel build: #1 Tue Jun 9 12:38:51 UTC 2026
+sdk: 36
+abi: arm64-v8a
+page size: 4096
+```
+
+W shares the US DZF2 kernel banner with U/U1. It is still a separate port:
+`SLIDE_S928_BANK_LOCK_MAX_BUCKET` is `28`, `SLIDE_BANK_SLOTS` is `1`, and
+late-load uses the S928B no-patch-text `ksud`.
 
 ## SM-S928B
 
@@ -59,7 +80,7 @@ the B module on U/U1.
 
 ## Explicitly unsupported
 
-- `SM-S928W`, `SM-S928N`, `SM-S9280`
+- `SM-S928N`, `SM-S9280`
 - Any CZC1 / ZDP / non-DZF2 build
 - Any kernel that is not the exact `6.1.145-android14-11-33419968-ab...DZF2`
   string listed above

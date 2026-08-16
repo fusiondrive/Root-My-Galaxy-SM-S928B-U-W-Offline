@@ -1,15 +1,19 @@
 Root My Galaxy SM-S928 DZF2 offline pack
 
 applicationId: io.github.rootmygalaxy.s24ultra
-versionName: 0.3.0-s928-dzf2-offline
-versionCode: 40
-debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.0.apk
-  size 75741994
-  sha256 d6afb436b7530cb78dbd7b98b8e7b46bfd325bfa4186404de6646ffd66d509d3
+versionName: 0.3.1-s928-dzf2-offline
+versionCode: 41
+debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.1.apk
+  size 71202380
+  sha256 cb7a09f5cd7c15347bacaa75573f0606e3085ea28319379416ca2f4dd4bb680f
 
 Targets
   e3q-S928USQS6DZF2
     models: SM-S928U, SM-S928U1
+    kernel: 6.1.145-android14-11-33419968-abS928USQS6DZF2
+  e3q-S928W-S928USQS6DZF2
+    model: SM-S928W
+    firmware: S928WVLS6DZF2
     kernel: 6.1.145-android14-11-33419968-abS928USQS6DZF2
   e3q-S928BXXS6DZF2
     model: SM-S928B
@@ -19,6 +23,9 @@ Published artifacts
   artifacts/e3q-S928USQS6DZF2/cve-2026-43499-app.so
     size 104128
     sha256 b2931d8980f969b5a0cb05bd67f6804f445ad4a4c867a7b4c4081c2ffac5b36a
+  artifacts/e3q-S928W-S928USQS6DZF2/cve-2026-43499-app.so
+    size 104128
+    sha256 82531cb637067d8e849f1c9d259933dcc3bed3519c1603841333cc8bcbd789e0
   artifacts/e3q-S928BXXS6DZF2/cve-2026-43499-app.so
     size 104128
     sha256 a49b378d654c7e637697a701c3c4c5fd02d22b9b30a7069c03e64ec5844af206
@@ -40,5 +47,7 @@ Published artifacts
 
 Provenance
   S928U/U1 payload: local device-tested public-source build
+  S928W payload: rebuilt here from PR #216 header deltas
+  S928W ksud: S928B no-patch-text pair, as recorded in PR #216
   S928B payload: RiosWesley/Root-My-Galaxy-Payloads@d9259fb31872de21e93b2411b3a0c09bc7693499
   App packaging: soumarcelino/Root-My-Galaxy-SM-S918B asset:// offline flow

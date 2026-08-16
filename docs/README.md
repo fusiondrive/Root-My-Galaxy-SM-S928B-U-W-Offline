@@ -10,4 +10,5 @@ Detailed notes for the offline Galaxy S24 Ultra DZF2 pack.
 - [Build, Install, And ADB](BUILD_INSTALL_ADB.md): APK build, install, and ADB staging.
 - [Troubleshooting](TROUBLESHOOTING.md): common failures and how to diagnose them.
 - [SM-S928U1 record](SM-S928U1-S928U1UES6DZF2.md): U/U1 firmware, symbols, and hashes.
+- [SM-S928W record](SM-S928W-S928USQS6DZF2.md): Canadian W firmware, bucket 28, and the B `ksud`.
 - [SM-S928B record](SM-S928B-S928BXXS6DZF2.md): B firmware, the logger-string delta, and hashes.
