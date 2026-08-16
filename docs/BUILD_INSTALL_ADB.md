@@ -23,8 +23,8 @@ Manual Gradle build:
 Package identity:
 
 ```text
-applicationId: io.github.fusiondrive.s928offline
-versionName: 0.3.2-s928-dzf2-offline
+applicationId: io.github.fusiondrive.RMGs928offline
+versionName: 0.3.3-s928-dzf2-offline
 ```
 
 This is distinct from official Root My Galaxy (`dev.busung.s25uroot`) and

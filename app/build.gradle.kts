@@ -8,11 +8,11 @@ android {
     compileSdk = 37
 
     defaultConfig {
-        applicationId = "io.github.fusiondrive.s928offline"
+        applicationId = "io.github.fusiondrive.RMGs928offline"
         minSdk = 33
         targetSdk = 36
-        versionCode = 42
-        versionName = "0.3.2-s928-dzf2-offline"
+        versionCode = 43
+        versionName = "0.3.3-s928-dzf2-offline"
         testInstrumentationRunner = "androidx.test.runner.AndroidJUnitRunner"
 
         ndk {

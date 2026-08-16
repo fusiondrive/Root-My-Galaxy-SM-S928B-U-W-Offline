@@ -1,4 +1,4 @@
-# Root My Galaxy SM-S928 DZF2 Offline
+# Root My Galaxy SM-S928B/U/W Offline
 
 Offline Root My Galaxy workspace for Galaxy S24 Ultra `e3q` on exact DZF2
 firmware. One APK bundles three independently audited targets:
@@ -121,7 +121,7 @@ Build the debug APK:
 A prebuilt debug APK from this tree is:
 
 ```text
-dist/RootMyGalaxy-S928-DZF2-offline-v0.3.2.apk
+dist/RootMyGalaxy-S928-DZF2-offline-v0.3.3.apk
 ```
 
 Rebuild one public payload:
@@ -149,21 +149,23 @@ kernelsu/ksud-e3q-S928BXXS6DZF2-kdp
 
 ## Credits
 
-- Device-tested `SM-S928U1` DZF2 payload and offline launcher work in this
-  workspace.
-- [RiosWesley](https://github.com/RiosWesley) for the `SM-S928B` /
-  `S928BXXS6DZF2` payload, KernelSU pair, and hardware evidence in
-  [BuSung-dev/Root-My-Galaxy-Payloads#208](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/208).
-- [mvfsullivan](https://github.com/mvfsullivan) for the Canadian `SM-S928W`
-  bucket/`ksud` findings and hardware evidence in
-  [BuSung-dev/Root-My-Galaxy-Payloads#216](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/216).
-- [soumarcelino/Root-My-Galaxy-SM-S918B](https://github.com/soumarcelino/Root-My-Galaxy-SM-S918B)
-  for the offline repository layout, bundled `asset://` app flow, and
-  reproduction-script structure used as the packaging model.
-- [youyoudezhuzhu/rmg-f731u](https://github.com/youyoudezhuzhu/rmg-f731u) for
-  the Root My Galaxy app baseline.
-- [BuSung-dev/Root-My-Galaxy-Payloads](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads)
-  for the public payload source tree and support-manifest schema.
+The `SM-S928U` / `SM-S928U1` DZF2 payload, KernelSU pair, and offline
+launcher in this repository are the local port.
+
+Thanks to [RiosWesley](https://github.com/RiosWesley) for the `SM-S928B`
+DZF2 profile, payload, KernelSU pair, and hardware evidence:
+[BuSung-dev/Root-My-Galaxy-Payloads#208](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/208).
+
+Thanks to [mvfsullivan](https://github.com/mvfsullivan) for the Canadian
+`SM-S928W` bucket / `ksud` findings and hardware evidence:
+[BuSung-dev/Root-My-Galaxy-Payloads#216](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads/pull/216).
+
+The offline repository layout follows
+[soumarcelino/Root-My-Galaxy-SM-S918B](https://github.com/soumarcelino/Root-My-Galaxy-SM-S918B).
+The app baseline is
+[youyoudezhuzhu/rmg-f731u](https://github.com/youyoudezhuzhu/rmg-f731u).
+The public payload tree is
+[BuSung-dev/Root-My-Galaxy-Payloads](https://github.com/BuSung-dev/Root-My-Galaxy-Payloads).
 
 This repository is an offline S24 Ultra DZF2 pack. It is not the official
 multi-device Root My Galaxy feed.
