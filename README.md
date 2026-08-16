@@ -149,6 +149,9 @@ kernelsu/ksud-e3q-S928BXXS6DZF2-kdp
 
 ## Credits
 
+Thanks to [BuSung-dev](https://github.com/BuSung-dev) for the original
+[Root My Galaxy](https://github.com/BuSung-dev/Root-My-Galaxy) project.
+
 The `SM-S928U` / `SM-S928U1` DZF2 payload, KernelSU pair, and offline
 launcher in this repository are the local port.
 
