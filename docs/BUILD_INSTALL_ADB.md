@@ -23,12 +23,12 @@ Manual Gradle build:
 Package identity:
 
 ```text
-applicationId: io.github.rootmygalaxy.s24ultra
-versionName: 0.3.1-s928-dzf2-offline
+applicationId: io.github.fusiondrive.s928offline
+versionName: 0.3.2-s928-dzf2-offline
 ```
 
-This is distinct from stock Root My Galaxy (`dev.busung.s25uroot`) and from
-the S918B offline app (`io.github.rootmygalaxy.s23ultra`).
+This is distinct from official Root My Galaxy (`dev.busung.s25uroot`) and
+from the S918B offline app (`io.github.rootmygalaxy.s23ultra`).
 
 ## Install The APK
 

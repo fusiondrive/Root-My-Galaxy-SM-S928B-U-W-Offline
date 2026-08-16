@@ -1,4 +1,4 @@
-# Root My Galaxy SM-S928 DZF2
+# Root My Galaxy SM-S928 DZF2 Offline
 
 Offline Root My Galaxy workspace for Galaxy S24 Ultra `e3q` on exact DZF2
 firmware. One APK bundles three independently audited targets:
@@ -121,7 +121,7 @@ Build the debug APK:
 A prebuilt debug APK from this tree is:
 
 ```text
-dist/RootMyGalaxy-S928-DZF2-offline-v0.3.1.apk
+dist/RootMyGalaxy-S928-DZF2-offline-v0.3.2.apk
 ```
 
 Rebuild one public payload:

@@ -1,11 +1,11 @@
-Root My Galaxy SM-S928 DZF2 offline pack
+Root My Galaxy SM-S928 DZF2 Offline
 
-applicationId: io.github.rootmygalaxy.s24ultra
-versionName: 0.3.1-s928-dzf2-offline
-versionCode: 41
-debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.1.apk
-  size 71202380
-  sha256 cb7a09f5cd7c15347bacaa75573f0606e3085ea28319379416ca2f4dd4bb680f
+applicationId: io.github.fusiondrive.s928offline
+versionName: 0.3.2-s928-dzf2-offline
+versionCode: 42
+debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.2.apk
+  size 71202376
+  sha256 d7ece14d0df3d129a240a8e0cf67db2bae540969777c5033371a6f893e95ee03
 
 Targets
   e3q-S928USQS6DZF2
