@@ -1,0 +1,44 @@
+Root My Galaxy SM-S928 DZF2 offline pack
+
+applicationId: io.github.rootmygalaxy.s24ultra
+versionName: 0.3.0-s928-dzf2-offline
+versionCode: 40
+debug apk: dist/RootMyGalaxy-S928-DZF2-offline-v0.3.0.apk
+  size 75741994
+  sha256 d6afb436b7530cb78dbd7b98b8e7b46bfd325bfa4186404de6646ffd66d509d3
+
+Targets
+  e3q-S928USQS6DZF2
+    models: SM-S928U, SM-S928U1
+    kernel: 6.1.145-android14-11-33419968-abS928USQS6DZF2
+  e3q-S928BXXS6DZF2
+    model: SM-S928B
+    kernel: 6.1.145-android14-11-33419968-abS928BXXS6DZF2
+
+Published artifacts
+  artifacts/e3q-S928USQS6DZF2/cve-2026-43499-app.so
+    size 104128
+    sha256 b2931d8980f969b5a0cb05bd67f6804f445ad4a4c867a7b4c4081c2ffac5b36a
+  artifacts/e3q-S928BXXS6DZF2/cve-2026-43499-app.so
+    size 104128
+    sha256 a49b378d654c7e637697a701c3c4c5fd02d22b9b30a7069c03e64ec5844af206
+  kernelsu/ksud-e3q-S928USQS6DZF2-kdp
+    size 4998352
+    sha256 10c1bf87f8e475e6ab8c5d1c5a085aa1544ee091f4451ad65141ea75261ab610
+  kernelsu/ksud-e3q-S928BXXS6DZF2-kdp
+    size 4748232
+    sha256 43f451313dc111429187f8f93e76c57c42976323782aac936c1c09aa309b76b3
+  kernelsu/android14-6.1_kernelsu-e3q-S928USQS6DZF2-kdp.ko
+    size 400152
+    sha256 ed7afea6cd221d5698739d3a1633264c084ffb77f2df730e5808941e0a555de5
+  kernelsu/android14-6.1_kernelsu-e3q-S928BXXS6DZF2-kdp.ko
+    size 398432
+    sha256 14f805c6a03123e84f10a252eb5b47f6c65c56c05ad4ccccf1f836c6867f64a9
+  app/src/main/jniLibs/arm64-v8a/libcve43499root.so
+    size 27072
+    sha256 54894e9bfa80fc36cfa03bd4ec4279e1d56eccc9719c9ee395b64ffd6792866b
+
+Provenance
+  S928U/U1 payload: local device-tested public-source build
+  S928B payload: RiosWesley/Root-My-Galaxy-Payloads@d9259fb31872de21e93b2411b3a0c09bc7693499
+  App packaging: soumarcelino/Root-My-Galaxy-SM-S918B asset:// offline flow

@@ -1,0 +1,25 @@
+# Android/Gradle outputs
+**/.gradle/
+**/build/
+**/.cxx/
+local.properties
+
+# Generated/distributable binaries
+*.apk
+*.aab
+*.elf
+*.img
+*.zip
+*.tar
+*.tar.*
+*.bin
+
+# Local secrets and signing material
+*.jks
+*.keystore
+.env
+.env.*
+
+# Device/runtime logs
+*.log
+exploit.log

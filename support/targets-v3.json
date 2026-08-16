@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 3,
+  "payloads": [
+    {
+      "payloadId": "e3q-S928USQS6DZF2",
+      "displayName": "Galaxy S24 Ultra SM-S928U/U1 | S928U1UES6DZF2",
+      "models": ["SM-S928U", "SM-S928U1"],
+      "kernelVersions": ["6.1.145"],
+      "kernelReleases": ["6.1.145-android14-11-33419968-abS928USQS6DZF2"],
+      "buildTokens": ["S928U1UES6DZF2", "S928USQS6DZF2"],
+      "exploit": {
+        "url": "asset://e3q-S928USQS6DZF2/cve-2026-43499-app.so",
+        "size": 104128,
+        "sha256": "b2931d8980f969b5a0cb05bd67f6804f445ad4a4c867a7b4c4081c2ffac5b36a"
+      },
+      "kernelsu": {
+        "url": "asset://e3q-S928USQS6DZF2/ksud-e3q-S928USQS6DZF2-kdp",
+        "size": 4998352,
+        "sha256": "10c1bf87f8e475e6ab8c5d1c5a085aa1544ee091f4451ad65141ea75261ab610"
+      }
+    },
+    {
+      "payloadId": "e3q-S928BXXS6DZF2",
+      "displayName": "Galaxy S24 Ultra SM-S928B | S928BXXS6DZF2",
+      "models": ["SM-S928B"],
+      "kernelVersions": ["6.1.145"],
+      "kernelReleases": ["6.1.145-android14-11-33419968-abS928BXXS6DZF2"],
+      "buildTokens": ["S928BXXS6DZF2"],
+      "exploit": {
+        "url": "asset://e3q-S928BXXS6DZF2/cve-2026-43499-app.so",
+        "size": 104128,
+        "sha256": "a49b378d654c7e637697a701c3c4c5fd02d22b9b30a7069c03e64ec5844af206"
+      },
+      "kernelsu": {
+        "url": "asset://e3q-S928BXXS6DZF2/ksud-e3q-S928BXXS6DZF2-kdp",
+        "size": 4748232,
+        "sha256": "43f451313dc111429187f8f93e76c57c42976323782aac936c1c09aa309b76b3"
+      }
+    }
+  ]
+}
